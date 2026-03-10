@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #080808;
+    --text-primary: #E7E7E7;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.mono {
+    font-family: "Fragment Mono", monospace;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.clock-wrapper {
+    text-align: center;
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+}
+
+.timezone:nth-child(1) {
+    color: var(--text-primary);
+    opacity: 40%;
+    z-index: 100;
+}
+
+.timezone {
+    position: absolute;
+}
+
+@media(max-width: 800px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+}
