@@ -34,9 +34,9 @@ h1 {
     height: 100vh;
 }
 
-.timezone:nth-child(1) {
+.timezone {
     color: var(--text-primary);
-    opacity: 40%;
+    opacity: 20%;
     z-index: 100;
 }
 

@@ -53,10 +53,10 @@ clocks.forEach((clock, i) => {
         clockElement = baseClock;
     } else {
         clockElement = baseClock.cloneNode(true);
-        const hueStep = 360 / clocks.length;
-        const jitter = 100; // small randomness
-        const hue = (i * hueStep) + (Math.random() * jitter - jitter/2);
-        clockElement.style.color = `hsl(${hue} 100% 85% / 0.2)`;
+        // const hueStep = 360 / clocks.length;
+        // const jitter = 100; // small randomness
+        // const hue = (i * hueStep) + (Math.random() * jitter - jitter/2);
+        // clockElement.style.color = `hsl(${hue} 100% 85% / 0.2)`;
         wrapper.appendChild(clockElement);
     }
 
